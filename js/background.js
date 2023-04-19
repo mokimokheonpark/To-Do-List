@@ -5,10 +5,10 @@ const images = [
     "30.jpg", "31.jpg", "32.jpg,", "33.jpg", "34.jpg", "35.jpg", "36.jpg", "37.jpg", "38.jpg", "39.jpg",
     "40.jpg", "41.jpg", "42.jpg,", "43.jpg", "44.jpg", "45.jpg", "46.jpg", "47.jpg", "48.jpg", "49.jpg"];
 
-const chosenImage = images[Math.floor(Math.random() * images.length)];
+const randomImage = images[Math.floor(Math.random() * images.length)];
 
-const bgImage = document.createElement("img");
+const backgroundImage = document.createElement("img");
 
-bgImage.src = `img/${chosenImage}`;
+backgroundImage.src = `img/${randomImage}`;
 
-document.body.appendChild(bgImage);
+document.body.appendChild(backgroundImage);

@@ -1,5 +1,5 @@
 const toDoForm = document.getElementById("todo-form");
-const toDoInput = document.querySelector("#todo-form input");
+const toDoFormInput = document.querySelector("#todo-form input");
 const toDoList = document.getElementById("todo-list");
 
 const TODOS_KEY = "toDos";
@@ -30,10 +30,10 @@ function paintToDo(newToDoObj) {
     toDoList.appendChild(li);
 }
 
-function handleToDoSubmit(event) {
+function submitToDo(event) {
     event.preventDefault();
-    const newToDo = toDoInput.value;
-    toDoInput.value = "";
+    const newToDo = toDoFormInput.value;
+    toDoFormInput.value = "";
     const newToDoObj = {
         text: newToDo,
         id: Date.now(),
@@ -43,7 +43,7 @@ function handleToDoSubmit(event) {
     saveToDos();
 }
 
-toDoForm.addEventListener("submit", handleToDoSubmit);
+toDoForm.addEventListener("submit", submitToDo);
 
 const savedToDos = localStorage.getItem(TODOS_KEY);
 
