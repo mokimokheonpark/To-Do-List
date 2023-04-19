@@ -11,9 +11,10 @@ const quotes = [
     {quote: "Travel expands the mind and fills the gap.", author: "Sheda Savage",},
 ];
 
+const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
+
 const quote = document.querySelector("#quote span:first-child");
 const author = document.querySelector("#quote span:last-child");
-const todaysQuote = quotes[Math.floor(Math.random() * quotes.length)];
 
-quote.innerText = todaysQuote.quote;
-author.innerText = todaysQuote.author;
+quote.innerText = `Today's quote: ${randomQuote.quote}`;
+author.innerText = randomQuote.author;
