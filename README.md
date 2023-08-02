@@ -9,6 +9,10 @@ This project implements a simple to-do-list application built with HTML, CSS and
 - Weather and time: the application shows the current weather and time based on the user's location.
 - Random quote and background: the application shows a random quote and background image every time it is loaded.
 
+## Demo
+
+A live demo of the To-Do-List project is available at https://mokimokheonpark.github.io/To-Do-List. Feel free to explore the application and test its functionalities.
+
 ## Installation
 
 - Clone the repository using the following command: git clone https://github.com/mokimokheonpark/To-Do-List-Project.git
